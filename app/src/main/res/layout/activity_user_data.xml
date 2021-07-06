@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userdata_card"
+    tools:context=".userData">
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Fill in your address completely"
+        android:textColor="#040001"
+        android:textColorHint="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Customer name"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <EditText
+        android:id="@+id/etCustomer_name"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/userinput_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Phone number"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etCustomer_name"
+        app:layout_constraintTop_toBottomOf="@+id/etCustomer_name" />
+
+    <EditText
+        android:id="@+id/etCustomer_phone"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/userinput_bg"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Address"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etCustomer_phone"
+        app:layout_constraintTop_toBottomOf="@+id/etCustomer_phone" />
+
+    <EditText
+        android:id="@+id/etCustomer_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/userinput_bg"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <Button
+        android:id="@+id/btn_Customer_Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/yes_bg"
+        android:text="Save"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/etCustomer_address"
+        app:layout_constraintTop_toBottomOf="@+id/etCustomer_address" />
+
+    <Button
+        android:id="@+id/btnCustomer_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Cancel"
+        android:textColor="#fff"
+        android:background="@drawable/no_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Customer_Save"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Customer_Save"
+        app:layout_constraintTop_toTopOf="@+id/btn_Customer_Save" />
+</androidx.constraintlayout.widget.ConstraintLayout>

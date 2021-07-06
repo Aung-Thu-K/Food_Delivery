@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="245dp"
+        android:background="@drawable/recom_bg">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="28dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="@+id/re_name"
+            app:layout_constraintTop_toBottomOf="@+id/re_name"
+            app:srcCompat="@drawable/star" />
+
+        <TextView
+            android:id="@+id/re_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textColor="#050000"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/re_img" />
+
+        <TextView
+            android:id="@+id/re_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="4.5"
+            android:textColor="@color/splash"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/time_bg"
+            android:gravity="center"
+            android:text="25 min"
+            android:textColor="#F1EEEE"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Free Delivery"
+        android:textColor="#050000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/re_img"
+        android:layout_width="149dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/re_price"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@drawable/re_price_bg"
+            android:gravity="center"
+            android:text="1500"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="@+id/textView10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

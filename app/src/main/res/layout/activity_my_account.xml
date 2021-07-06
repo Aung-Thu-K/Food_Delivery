@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myAccount">
+
+    <TextView
+        android:id="@+id/myAccountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="MyAcoount Name"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/myAccountProfile"
+        app:layout_constraintStart_toStartOf="@+id/myAccountProfile"
+        app:layout_constraintTop_toBottomOf="@+id/myAccountProfile" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="This application is for testing purposes only. Can't really order. Special thanks for the encouragement."
+        android:textColor="@color/splash"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myAccountName" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Developer"
+        android:textColor="#E91E63"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Mg Aung Thu Khant"
+        android:textColor="#0C0004"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView27"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="University"
+        android:textColor="#E91E63"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:text="University Of Computer Studies Taungoo"
+        android:textColor="#070000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/myAccountProfile"
+        android:layout_width="221dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=" Year of attendance"
+        android:textColor="#E91E63"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Second Year"
+        android:textColor="#040000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView31"
+        app:layout_constraintStart_toEndOf="@+id/textView31"
+        app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="169dp"
+        android:layout_height="41dp"
+        android:background="@drawable/yes_bg"
+        android:text="Go To Home Page"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

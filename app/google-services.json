@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "525454070365",
+    "project_id": "foodgreen-b01e3",
+    "storage_bucket": "foodgreen-b01e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525454070365:android:8eb69b67a587e12f6033b4",
+        "android_client_info": {
+          "package_name": "com.atkandroid.foodgreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525454070365-ovkegli30e0455d6op2lke5tm13a9u42.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.atkandroid.foodgreen",
+            "certificate_hash": "4bc0febb21a1acac93ea2352a9001548d047f81c"
+          }
+        },
+        {
+          "client_id": "525454070365-8fc2k1ecv0pp4t0n7k83dh8b90nu6rf2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlm_3R02HLaiK83CVO7_TrKEEvOPNXMoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525454070365-8fc2k1ecv0pp4t0n7k83dh8b90nu6rf2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
